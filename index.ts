@@ -25,6 +25,7 @@ async function handler(_req: Request): Promise<Response> {
     word1: word1,
     word2: "chaussure",
   });
+  console.log(word1,word2);
 
   const requestOptions = {
     method: "POST",
