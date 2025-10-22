@@ -19,11 +19,12 @@ async function handler(_req: Request): Promise<Response> {
   const url = new URL(_req.url);
   const pathSegments = url.pathname.split("/").filter(Boolean);
   const word1 = pathSegments[pathSegments.length - 1] || "";
+  const word2 = "chaussure";
 
 
   const similarityRequestBody = JSON.stringify({
     word1: word1,
-    word2: "chaussure",
+    word2: word2
   });
   console.log(word1,word2);
 
